@@ -1,0 +1,548 @@
+{
+  "monitoring_date": "2025-10-02",
+  "n_batches": 30,
+  "total_observations": 1470,
+  "metrics_summary": {
+    "f1": {
+      "count": 30.0,
+      "mean": 0.6068302675423418,
+      "std": 0.15206764672155013,
+      "min": 0.2857142857142857,
+      "25%": 0.5,
+      "50%": 0.6333333333333333,
+      "75%": 0.7107142857142857,
+      "max": 0.9090909090909091
+    },
+    "recall": {
+      "count": 30.0,
+      "mean": 0.5732368557368557,
+      "std": 0.16317095267783413,
+      "min": 0.25,
+      "25%": 0.5,
+      "50%": 0.5555555555555556,
+      "75%": 0.6590909090909091,
+      "max": 1.0
+    },
+    "precision": {
+      "count": 30.0,
+      "mean": 0.6971657046657047,
+      "std": 0.23226077557637897,
+      "min": 0.3333333333333333,
+      "25%": 0.5,
+      "50%": 0.7207792207792207,
+      "75%": 0.8645833333333334,
+      "max": 1.0
+    },
+    "roc_auc": {
+      "count": 30.0,
+      "mean": 0.8561414743082213,
+      "std": 0.08218135802633339,
+      "min": 0.6360544217687074,
+      "25%": 0.8152777777777778,
+      "50%": 0.8713041344620293,
+      "75%": 0.908974358974359,
+      "max": 0.9916666666666667
+    },
+    "pos_rate": {
+      "count": 30.0,
+      "mean": 0.13197278911564625,
+      "std": 0.04278615256909894,
+      "min": 0.061224489795918366,
+      "25%": 0.10204081632653061,
+      "50%": 0.12244897959183673,
+      "75%": 0.16326530612244897,
+      "max": 0.22448979591836735
+    }
+  },
+  "alerts": [
+    {
+      "type": "page_hinkley",
+      "severity": "HIGH",
+      "batches": [
+        7,
+        9,
+        14,
+        16,
+        17,
+        19,
+        21,
+        22,
+        26,
+        28,
+        29
+      ],
+      "description": "Mean shift detected in predicted probabilities"
+    },
+    {
+      "type": "psi",
+      "severity": "HIGH",
+      "batches": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "description": "PSI \u2265 0.2 detected (high feature drift)",
+      "details": [
+        {
+          "batch": 0,
+          "features": [
+            "HourlyRate",
+            "MonthlyIncome",
+            "YearsAtCompany"
+          ],
+          "max_psi": 0.29705959917395364
+        },
+        {
+          "batch": 2,
+          "features": [
+            "Age",
+            "YearsInCurrentRole"
+          ],
+          "max_psi": 0.3293070761106084
+        },
+        {
+          "batch": 3,
+          "features": [
+            "DailyRate",
+            "DistanceFromHome",
+            "EmployeeNumber",
+            "MonthlyIncome",
+            "MonthlyRate",
+            "TotalWorkingYears",
+            "YearsAtCompany",
+            "YearsWithCurrManager"
+          ],
+          "max_psi": 0.46643552256883053
+        },
+        {
+          "batch": 4,
+          "features": [
+            "Age",
+            "DailyRate",
+            "EmployeeNumber",
+            "HourlyRate",
+            "MonthlyRate",
+            "TotalWorkingYears",
+            "TrainingTimesLastYear",
+            "YearsInCurrentRole"
+          ],
+          "max_psi": 1.4420361829692132
+        },
+        {
+          "batch": 5,
+          "features": [
+            "Age",
+            "DistanceFromHome",
+            "EmployeeNumber",
+            "HourlyRate",
+            "MonthlyIncome",
+            "MonthlyRate",
+            "TotalWorkingYears",
+            "YearsAtCompany"
+          ],
+          "max_psi": 1.7118704282231576
+        },
+        {
+          "batch": 6,
+          "features": [
+            "DistanceFromHome",
+            "TotalWorkingYears",
+            "WorkLifeBalance",
+            "YearsAtCompany",
+            "YearsWithCurrManager"
+          ],
+          "max_psi": 0.9893603722334339
+        },
+        {
+          "batch": 7,
+          "features": [
+            "Age",
+            "DailyRate",
+            "EmployeeNumber",
+            "HourlyRate",
+            "MonthlyIncome",
+            "MonthlyRate",
+            "TotalWorkingYears",
+            "YearsInCurrentRole",
+            "YearsWithCurrManager"
+          ],
+          "max_psi": 1.502441757140219
+        },
+        {
+          "batch": 8,
+          "features": [
+            "DailyRate",
+            "EmployeeNumber",
+            "JobLevel",
+            "MonthlyIncome",
+            "MonthlyRate",
+            "PercentSalaryHike",
+            "TotalWorkingYears",
+            "YearsAtCompany"
+          ],
+          "max_psi": 1.4478128363812617
+        },
+        {
+          "batch": 9,
+          "features": [
+            "DistanceFromHome",
+            "EmployeeNumber",
+            "HourlyRate",
+            "JobSatisfaction",
+            "MonthlyIncome",
+            "PercentSalaryHike",
+            "TotalWorkingYears",
+            "YearsInCurrentRole"
+          ],
+          "max_psi": 0.4201928123331099
+        },
+        {
+          "batch": 10,
+          "features": [
+            "Age",
+            "EmployeeNumber",
+            "HourlyRate",
+            "RelationshipSatisfaction",
+            "TotalWorkingYears",
+            "YearsAtCompany"
+          ],
+          "max_psi": 1.3012350935431947
+        },
+        {
+          "batch": 11,
+          "features": [
+            "Age",
+            "DailyRate",
+            "DistanceFromHome",
+            "Education",
+            "EmployeeNumber",
+            "HourlyRate",
+            "MonthlyIncome",
+            "MonthlyRate",
+            "NumCompaniesWorked",
+            "YearsAtCompany"
+          ],
+          "max_psi": 1.525036273055158
+        },
+        {
+          "batch": 12,
+          "features": [
+            "Age",
+            "DailyRate",
+            "HourlyRate",
+            "MonthlyIncome",
+            "MonthlyRate",
+            "PercentSalaryHike",
+            "TotalWorkingYears",
+            "WorkLifeBalance",
+            "YearsAtCompany",
+            "YearsInCurrentRole",
+            "YearsWithCurrManager"
+          ],
+          "max_psi": 1.3794195120352044
+        },
+        {
+          "batch": 13,
+          "features": [
+            "Age",
+            "DailyRate",
+            "DistanceFromHome",
+            "EmployeeNumber",
+            "HourlyRate",
+            "MonthlyIncome",
+            "MonthlyRate",
+            "TotalWorkingYears",
+            "YearsWithCurrManager"
+          ],
+          "max_psi": 1.336370230244922
+        },
+        {
+          "batch": 14,
+          "features": [
+            "Age",
+            "DailyRate",
+            "MonthlyIncome",
+            "MonthlyRate",
+            "YearsWithCurrManager"
+          ],
+          "max_psi": 1.3867119916350121
+        },
+        {
+          "batch": 15,
+          "features": [
+            "Age",
+            "MonthlyIncome",
+            "MonthlyRate",
+            "TotalWorkingYears",
+            "YearsAtCompany"
+          ],
+          "max_psi": 1.5428362566982747
+        },
+        {
+          "batch": 16,
+          "features": [
+            "DailyRate",
+            "EmployeeNumber",
+            "HourlyRate",
+            "MonthlyIncome",
+            "MonthlyRate",
+            "TotalWorkingYears",
+            "YearsAtCompany"
+          ],
+          "max_psi": 1.2217980654625344
+        },
+        {
+          "batch": 17,
+          "features": [
+            "HourlyRate",
+            "MonthlyIncome",
+            "MonthlyRate",
+            "YearsAtCompany",
+            "YearsWithCurrManager"
+          ],
+          "max_psi": 1.4034767471877942
+        },
+        {
+          "batch": 18,
+          "features": [
+            "Age",
+            "JobLevel",
+            "MonthlyIncome",
+            "MonthlyRate",
+            "TotalWorkingYears",
+            "YearsAtCompany",
+            "YearsInCurrentRole",
+            "YearsWithCurrManager"
+          ],
+          "max_psi": 1.0551727707720617
+        },
+        {
+          "batch": 19,
+          "features": [
+            "Age",
+            "DailyRate",
+            "JobLevel",
+            "JobSatisfaction",
+            "MonthlyIncome",
+            "MonthlyRate",
+            "NumCompaniesWorked",
+            "TotalWorkingYears",
+            "YearsAtCompany"
+          ],
+          "max_psi": 1.490604743806687
+        },
+        {
+          "batch": 20,
+          "features": [
+            "DistanceFromHome",
+            "EmployeeNumber",
+            "HourlyRate",
+            "MonthlyIncome",
+            "MonthlyRate",
+            "YearsAtCompany"
+          ],
+          "max_psi": 1.2441373683890913
+        },
+        {
+          "batch": 21,
+          "features": [
+            "Age",
+            "DailyRate",
+            "DistanceFromHome",
+            "HourlyRate",
+            "TotalWorkingYears",
+            "YearsAtCompany",
+            "YearsInCurrentRole"
+          ],
+          "max_psi": 1.6339651055607418
+        },
+        {
+          "batch": 22,
+          "features": [
+            "MonthlyIncome",
+            "MonthlyRate",
+            "TotalWorkingYears",
+            "YearsAtCompany",
+            "YearsWithCurrManager"
+          ],
+          "max_psi": 1.3761053045000886
+        },
+        {
+          "batch": 23,
+          "features": [
+            "Age",
+            "DistanceFromHome",
+            "HourlyRate",
+            "JobInvolvement",
+            "JobLevel",
+            "MonthlyIncome",
+            "MonthlyRate",
+            "TotalWorkingYears",
+            "YearsAtCompany",
+            "YearsSinceLastPromotion",
+            "YearsWithCurrManager"
+          ],
+          "max_psi": 1.5080889059114997
+        },
+        {
+          "batch": 24,
+          "features": [
+            "Age",
+            "DailyRate",
+            "DistanceFromHome",
+            "HourlyRate",
+            "JobLevel",
+            "MonthlyIncome",
+            "PercentSalaryHike",
+            "YearsAtCompany"
+          ],
+          "max_psi": 1.2116784324252543
+        },
+        {
+          "batch": 25,
+          "features": [
+            "Age",
+            "Education",
+            "EmployeeNumber",
+            "HourlyRate",
+            "JobLevel",
+            "MonthlyIncome",
+            "MonthlyRate",
+            "NumCompaniesWorked",
+            "TotalWorkingYears",
+            "YearsAtCompany",
+            "YearsInCurrentRole",
+            "YearsWithCurrManager"
+          ],
+          "max_psi": 1.4180855690022618
+        },
+        {
+          "batch": 26,
+          "features": [
+            "DailyRate",
+            "EmployeeNumber",
+            "HourlyRate",
+            "MonthlyIncome",
+            "MonthlyRate",
+            "TotalWorkingYears",
+            "TrainingTimesLastYear",
+            "YearsAtCompany",
+            "YearsInCurrentRole",
+            "YearsWithCurrManager"
+          ],
+          "max_psi": 0.753613171603135
+        },
+        {
+          "batch": 27,
+          "features": [
+            "Age",
+            "DistanceFromHome",
+            "HourlyRate",
+            "MonthlyIncome",
+            "MonthlyRate",
+            "TotalWorkingYears",
+            "YearsAtCompany",
+            "YearsInCurrentRole",
+            "YearsWithCurrManager"
+          ],
+          "max_psi": 1.4566999676918304
+        },
+        {
+          "batch": 28,
+          "features": [
+            "Age",
+            "DailyRate",
+            "DistanceFromHome",
+            "MonthlyIncome",
+            "MonthlyRate",
+            "YearsAtCompany",
+            "YearsInCurrentRole",
+            "YearsWithCurrManager"
+          ],
+          "max_psi": 0.5479130153491804
+        },
+        {
+          "batch": 29,
+          "features": [
+            "Age",
+            "DistanceFromHome",
+            "HourlyRate",
+            "JobLevel",
+            "JobSatisfaction",
+            "MonthlyIncome",
+            "MonthlyRate",
+            "RelationshipSatisfaction",
+            "TotalWorkingYears",
+            "YearsInCurrentRole",
+            "YearsWithCurrManager"
+          ],
+          "max_psi": 1.3540138036343665
+        }
+      ]
+    },
+    {
+      "type": "kl_divergence",
+      "severity": "MEDIUM",
+      "batches": [
+        5,
+        15,
+        16,
+        17,
+        18,
+        23,
+        25,
+        26,
+        29
+      ],
+      "description": "KL divergence \u2265 0.2 in categorical features"
+    }
+  ],
+  "psi_summary": {
+    "MonthlyIncome": 0.5184973517805621,
+    "YearsAtCompany": 0.45087085514730846,
+    "HourlyRate": 0.42790884087062525,
+    "MonthlyRate": 0.3845298040872741,
+    "TotalWorkingYears": 0.3780306967690795,
+    "Age": 0.35561699218628395,
+    "DistanceFromHome": 0.31347387768627016,
+    "YearsWithCurrManager": 0.2971789627536151,
+    "EmployeeNumber": 0.2965797683053253,
+    "DailyRate": 0.2872156838750592
+  },
+  "kl_summary": {
+    "BusinessTravel": 0.02473115150897,
+    "Department": 0.07750320355763511,
+    "EducationField": 0.1426856188292066,
+    "Gender": 0.01949756200757575,
+    "JobRole": 0.20252979797656803,
+    "MaritalStatus": 0.03385705923357604,
+    "Over18": 0.0,
+    "OverTime": 0.008201260368664616
+  }
+}
