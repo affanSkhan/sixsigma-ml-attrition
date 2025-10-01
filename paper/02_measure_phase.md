@@ -17,10 +17,11 @@ The cross-validation results are summarized below, with performance on the hold-
 | Model               | Precision | Recall | F1-Score | ROC AUC |
 |---------------------|-----------|--------|----------|---------|
 | Dummy Classifier    | 0.00      | 0.00   | 0.00     | 0.50    |
-| Logistic Regression | 0.71      | 0.40   | 0.51     | 0.76    |
-| Decision Tree       | 0.35      | 0.44   | 0.39     | 0.63    |
+| Logistic Regression | 0.62      | 0.34   | 0.44     | 0.81    |
+| Decision Tree       | 0.31      | 0.38   | 0.34     | 0.61    |
 
 *Table 1: Baseline model performance on the hold-out test set.*
+
 
 ![Confusion matrices for baseline models.](../figures/baseline_confusion_matrices.png)
 *Figure 1: Confusion matrices for baseline models on the hold-out test set. The Logistic Regression model (center) shows the best balance but still misclassifies a high number of positive ('Yes') cases.*
