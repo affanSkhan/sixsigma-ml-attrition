@@ -14,6 +14,7 @@ paper/
 ├── 04_improve_results.md               # Experimental interventions (6 experiments)
 ├── 05_final_results.md                 # ⭐ FULL MODEL CARD (30 pages)
 ├── 06_control_phase_summary.md         # ⭐ CONDENSED SUMMARY (1 page)
+├── appendix_control_plan.md            # ⭐ DEPLOYMENT & MONITORING GUIDE
 ├── criteria.md                         # Model selection criteria
 ├── outline.md                          # Original project outline
 ├── preprocessing_log.txt               # Data preprocessing notes
@@ -130,7 +131,34 @@ paper/
 
 ---
 
-### 4. `COMPLETION_SUMMARY.md` (Status Report)
+### 4. `appendix_control_plan.md` (Deployment & Monitoring Guide)
+**Length:** 300+ lines  
+**Purpose:** Operational control plan for production deployment  
+**Use Case:** Journal appendix, MLOps documentation, deployment playbook
+
+**Sections:**
+- Monitoring strategy (daily/weekly checks)
+- Statistical Process Control (p-chart, EWMA with 3σ limits)
+- Drift detection methods (PSI, KL-divergence, Page-Hinkley, ADWIN)
+- Fairness & performance parity checks (weekly)
+- Retraining & remediation policy (triggers, workflow)
+- Alerting & incident response (severity levels, SLAs)
+- Logging, storage & reproducibility requirements
+- Dashboards & tooling recommendations (Evidently, Grafana, MLflow)
+- Governance roles & responsibilities
+- Rollback & safety plan
+- Control phase KPIs (TTD < 48h, TTR < 72h)
+
+**Companion notebook:** `notebooks/06_control.ipynb` simulates all monitoring techniques
+
+**How to Use:**
+- Reference for MLOps team during deployment
+- Include as Appendix B in research paper
+- Adapt thresholds based on business requirements
+
+---
+
+### 5. `COMPLETION_SUMMARY.md` (Status Report)
 **Length:** ~300 lines  
 **Purpose:** Milestone completion summary  
 **Use Case:** Quick reference for what's done and what's left
@@ -145,7 +173,7 @@ paper/
 - Next steps (immediate, short-term, long-term)
 
 **How to Use:**
-- Review to understand current project status (95% complete)
+- Review to understand current project status (100% complete)
 - Use as progress report for advisors/sponsors
 - Reference for next steps planning
 
@@ -165,7 +193,8 @@ paper/
 1. `PUBLICATION_CHECKLIST.md` - Understand what's needed
 2. `06_control_phase_summary.md` - Use as Section 5
 3. `02_measure_phase.md` + `03_analyze_decisions.md` + `04_improve_results.md` - Mine for Sections 3-4
-4. `05_final_results.md` - Extract Appendix content
+4. `05_final_results.md` - Extract Appendix A content (model card)
+5. `appendix_control_plan.md` - Use as Appendix B (deployment guide)
 
 ### For Code Reproducers
 1. `criteria.md` - Understand success criteria
