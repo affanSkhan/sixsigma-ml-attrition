@@ -14,7 +14,16 @@ To establish a performance baseline, three models were evaluated using a stratif
 
 The cross-validation results are summarized below, with performance on the hold-out test set used for final comparison.
 
-*(Here, you would embed your table of hold-out metrics or reference the figures `baseline_confusion_matrices.png` and `baseline_roc_curves.png`)*
+| Model               | Precision | Recall | F1-Score | ROC AUC |
+|---------------------|-----------|--------|----------|---------|
+| Dummy Classifier    | 0.00      | 0.00   | 0.00     | 0.50    |
+| Logistic Regression | 0.71      | 0.40   | 0.51     | 0.76    |
+| Decision Tree       | 0.35      | 0.44   | 0.39     | 0.63    |
+
+*Table 1: Baseline model performance on the hold-out test set.*
+
+![Confusion matrices for baseline models.](../figures/baseline_confusion_matrices.png)
+*Figure 1: Confusion matrices for baseline models on the hold-out test set. The Logistic Regression model (center) shows the best balance but still misclassifies a high number of positive ('Yes') cases.*
 
 The Logistic Regression model provided the strongest baseline, achieving an F1-score of **0.51** and a ROC AUC of **0.76** on the hold-out test set. While this performance is significantly better than the dummy classifier, the recall of **0.40** for the positive class is low. This indicates that the baseline model struggles to correctly identify employees who are likely to attrite, capturing only 40% of them.
 
