@@ -1,16 +1,35 @@
-pandas
-numpy
-scikit-learn
-matplotlib
-seaborn
-scipy
-statsmodels
-scikit-posthocs
-imbalanced-learn
-xgboost
-lightgbm
-shap
-optuna
-joblib
-notebook
-jupyterlab
+# Core ML and Data Science
+pandas>=2.0.0
+numpy>=1.24.0
+scikit-learn>=1.7.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.13.0
+
+# Statistical Analysis
+scipy>=1.10.0
+statsmodels>=0.14.0
+
+# Imbalanced Learning
+imbalanced-learn>=0.11.0
+
+# Model Interpretation
+shap>=0.45.0
+
+# Drift Detection (optional)
+river>=0.21.0
+
+# Utilities
+joblib>=1.3.0
+
+# Jupyter Environment
+notebook>=7.0.0
+ipykernel>=6.25.0
+
+# Optional: Hyperparameter Tuning (not used in final project)
+# optuna>=3.0.0
+
+# Optional: Other Models (tested but not used in final)
+# xgboost>=2.0.0
+# lightgbm>=4.0.0
