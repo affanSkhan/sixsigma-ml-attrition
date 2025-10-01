@@ -10,17 +10,17 @@ Improving ML Model Accuracy Using Six Sigma DMAIC: A Case Study on Employee Attr
 
 \## Abstract (150-200 words)
 
-\- \*\*Context\*\*: The high cost of employee attrition requires robust predictive models.
+\- \*\*Context\*\*: The high cost of employee attrition requires robust predictive models.  
 
-\- \*\*Problem\*\*: ML models often lack a structured framework for iterative improvement.
+\- \*\*Problem\*\*: ML models often lack a structured framework for iterative improvement.  
 
-\- \*\*Method\*\*: We apply the Six Sigma DMAIC (Define, Measure, Analyze, Improve, Control) methodology to systematically enhance an attrition prediction model.
+\- \*\*Method\*\*: We apply the Six Sigma DMAIC (Define, Measure, Analyze, Improve, Control) methodology to systematically enhance an attrition prediction model.  
 
-\- \*\*Dataset\*\*: The public IBM HR Analytics dataset.
+\- \*\*Dataset\*\*: The public IBM HR Analytics dataset.  
 
-\- \*\*Key Result\*\*: Our DMAIC-driven approach significantly improved model accuracy and F1-score compared to a baseline model.
+\- \*\*Key Result\*\*: Our DMAIC-driven approach significantly improved model accuracy and F1-score compared to a baseline model.  
 
-\- \*\*Implication\*\*: This provides a reproducible, structured framework for ML model optimization in business contexts.
+\- \*\*Implication\*\*: This provides a reproducible, structured framework for ML model optimization in business contexts.  
 
 
 
@@ -30,87 +30,95 @@ Six Sigma, DMAIC, Machine Learning, Employee Attrition, Statistical Methods, Rep
 
 
 
-\### 1. Introduction
+\## 1. Introduction
 
-\- Motivation: The business impact of employee attrition.
+\- \*\*Motivation\*\*: The business impact of employee attrition.  
 
-\- Research Question: Can a structured process improvement framework like DMAIC measurably improve ML model performance for a business problem?
+\- \*\*Research Question\*\*: Can a structured process improvement framework like DMAIC measurably improve ML model performance for a business problem?  
 
-\- Gap Statement: Lack of documented, systematic approaches for ML model improvement beyond ad-hoc tuning.
+\- \*\*Gap Statement\*\*: Lack of documented, systematic approaches for ML model improvement beyond ad-hoc tuning.  
 
-\- Contributions: (1) A novel mapping of DMAIC to the ML workflow. (2) A reproducible case study. (3) Practical insights for HR analytics.
+\- \*\*Contributions\*\*:  
 
+&nbsp; 1. A novel mapping of DMAIC to the ML workflow.  
 
+&nbsp; 2. A reproducible case study.  
 
-\### 2. Literature Review
-
-\- Summary of ML techniques for predicting employee attrition.
-
-\- Overview of Six Sigma and DMAIC in non-manufacturing domains.
-
-\- Identification of the research gap where these two fields intersect.
+&nbsp; 3. Practical insights for HR analytics.  
 
 
 
-\### 3. Methodology
+\## 2. Literature Review
 
-\- \*\*DMAIC Framework Mapping\*\*:
+\- Summary of ML techniques for predicting employee attrition.  
 
-&nbsp;   - \*\*Define\*\*: Problem statement, project scope, and key metrics (e.g., F1-score, Recall).
+\- Overview of Six Sigma and DMAIC in non-manufacturing domains.  
 
-&nbsp;   - \*\*Measure\*\*: Baseline model performance.
-
-&nbsp;   - \*\*Analyze\*\*: Statistical analysis (e.g., ANOVA, Chi-squared tests) to identify key drivers of attrition and model error.
-
-&nbsp;   - \*\*Improve\*\*: Targeted feature engineering, algorithm selection, and hyperparameter tuning.
-
-&nbsp;   - \*\*Control\*\*: Monitoring plan and validation of the improved model.
-
-\- \*\*Data Description\*\*: Details of the IBM dataset.
-
-\- \*\*Modeling Approach\*\*: Baseline (e.g., Logistic Regression) vs. Improved models (e.g., XGBoost). Cross-validation strategy.
+\- Identification of the research gap where these two fields intersect.  
 
 
 
-\### 4. Experiments and Results
+\## 3. Methodology
 
-\- Baseline model results with key metrics.
+\- \*\*DMAIC Framework Mapping\*\*:  
 
-\- Results from the Analyze phase (statistical tests).
+&nbsp; - \*\*Define\*\*: Problem statement, project scope, and key metrics (e.g., F1-score, Recall).  
 
-\- Performance of the improved model after interventions.
+&nbsp; - \*\*Measure\*\*: Baseline model performance.  
 
-\- Statistical significance tests comparing baseline and improved models.
+&nbsp; - \*\*Analyze\*\*: Statistical analysis (e.g., ANOVA, Chi-squared tests) to identify key drivers of attrition and model error.  
 
-\- Model explainability analysis (e.g., SHAP plots).
+&nbsp; - \*\*Improve\*\*: Targeted feature engineering, algorithm selection, and hyperparameter tuning.  
 
+&nbsp; - \*\*Control\*\*: Monitoring plan and validation of the improved model.  
 
+\- \*\*Data Description\*\*: Details of the IBM dataset.  
 
-\### 5. Discussion
-
-\- Interpretation of findings: Why did the improvements work?
-
-\- Practical implications for HR departments.
-
-\- Limitations of the study (e.g., dataset limitations).
+\- \*\*Modeling Approach\*\*: Baseline (e.g., Logistic Regression) vs. Improved models (e.g., XGBoost). Cross-validation strategy.  
 
 
 
-\### 6. Conclusion and Future Work
+\## 4. Experiments and Results
 
-\- Summary of the research and key takeaways.
+\- Baseline model results with key metrics.  
 
-\- Directions for future research (e.g., applying the framework to other domains).
+\- Results from the Analyze phase (statistical tests).  
+
+\- Performance of the improved model after interventions.  
+
+\- Statistical significance tests comparing baseline and improved models.  
+
+\- Model explainability analysis (e.g., SHAP plots).  
 
 
 
-\### References
+\## 5. Discussion
+
+\- Interpretation of findings: Why did the improvements work?  
+
+\- Practical implications for HR departments.  
+
+\- Limitations of the study (e.g., dataset limitations).  
 
 
 
-\### Appendices
+\## 6. Conclusion and Future Work
 
-\- Hyperparameter tuning grids.
+\- Summary of the research and key takeaways.  
 
-\- Detailed statistical test outputs.
+\- Directions for future research (e.g., applying the framework to other domains).  
+
+
+
+\## References
+
+
+
+\## Appendices
+
+\- Hyperparameter tuning grids.  
+
+\- Detailed statistical test outputs.  
+
+
 
