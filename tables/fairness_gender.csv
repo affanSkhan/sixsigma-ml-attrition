@@ -1,0 +1,3 @@
+group,recall,precision,n_pos,n_neg
+Female,0.25,0.4444444444444444,16,100
+Male,0.22580645161290322,0.7,31,147

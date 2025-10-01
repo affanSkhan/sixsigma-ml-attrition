@@ -1,0 +1,17 @@
+Preprocessing Log - Improve Phase
+==================================================
+
+Date: 2025-10-01
+
+Final Preprocessing Decisions:
+1. Class Imbalance: SMOTE (k=5) applied during training
+2. Feature Transformations: log1p on MonthlyIncome, TotalWorkingYears, YearsAtCompany
+3. Outlier Treatment: Winsorization at 1st/99th percentiles for Income, YearsSince, YearsAt
+4. Scaling: StandardScaler for numeric features
+5. Categorical Encoding: OneHotEncoder with handle_unknown='ignore'
+6. Model: RandomForestClassifier (n_estimators=200)
+
+Rationale:
+- SMOTE improved recall significantly (paired t-test p < 0.05)
+- Log transform reduced skewness in key features
+- RandomForest outperformed linear models on F1 score
