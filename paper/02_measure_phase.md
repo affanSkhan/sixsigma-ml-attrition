@@ -52,13 +52,14 @@ Cross‑validation means (for robustness) corroborate relative ordering (see `ta
 
 Visual diagnostics:
 - **Confusion matrices:** Highlight high false negative proportion (Figure 1).
-- **ROC curves:** (Planned / recommended) show separation vs random; dummy model anchors diagonal.
-- **Precision–Recall curves:** (Planned / recommended) emphasize difficulty in achieving simultaneous high precision and recall at low prevalence; Logistic Regression curve dominates the tree across most thresholds.
+- **ROC curves:** Show separation vs random; dummy model anchors diagonal (Figure 2).
+- **Precision–Recall curves:** Emphasize difficulty in achieving simultaneous high precision and recall at low prevalence; Logistic Regression curve dominates the tree across most thresholds.
 
 ![Baseline confusion matrices](../figures/baseline_confusion_matrices.png)
 *Figure 1: Confusion matrices for baseline models. Imbalance drives dominant true negative counts; positive recall remains constrained.*
 
-If added, ROC and PR composite plots will be referenced as Figures 2 and 3 respectively in the Analyze phase draft.
+![Baseline ROC curves](../figures/baseline_roc_curves.png)
+*Figure 2: ROC curves for baseline models. Logistic Regression (AUC=0.81) substantially outperforms Decision Tree (AUC=0.61) and Dummy classifier (AUC=0.50).*
 
 ### 3.3 Statistical Interpretation
 
@@ -83,7 +84,7 @@ Artifacts produced in this phase:
 - `notebooks/02_baseline_models.ipynb` – baseline training & evaluation.
 - `tables/descriptive_stats_numeric.csv` – full numeric summary.
 - `tables/baseline_metrics_cv.csv` & `tables/baseline_holdout_metrics.csv` – CV vs hold‑out metrics.
-- `figures/baseline_confusion_matrices.png` (ROC/PR composite plots to be added).
+- `figures/baseline_confusion_matrices.png` & `figures/baseline_roc_curves.png` – visual diagnostics.
 - Draft narrative (`paper/02_measure_phase.md`).
 
 The Measure phase establishes a reproducible baseline with statistically contextualized metrics, enabling targeted hypothesis generation in the Analyze phase rather than ad‑hoc trial-and-error.

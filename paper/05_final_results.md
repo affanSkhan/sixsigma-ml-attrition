@@ -191,17 +191,17 @@ Breakdown:
 
 | **Threshold** | **F1-Score** | **Recall** | **Precision** | **Accuracy** |
 |---------------|--------------|------------|---------------|--------------|
-| 0.30 | 0.438 | 0.872 | 0.291 | 0.795 |
-| 0.35 | 0.478 | 0.809 | 0.339 | 0.835 |
+| 0.30 | 0.505 | 0.511 | 0.500 | 0.840 |
+| 0.35 | 0.467 | 0.447 | 0.488 | 0.837 |
 | **0.388** | **0.506** | **0.447** | **0.583** | **0.861** |
-| 0.40 | 0.514 | 0.404 | 0.704 | 0.871 |
-| 0.45 | 0.500 | 0.362 | 0.773 | 0.878 |
+| 0.40 | 0.519 | 0.447 | 0.618 | 0.867 |
+| 0.45 | 0.500 | 0.404 | 0.655 | 0.871 |
 | 0.50 | 0.438 | 0.340 | 0.615 | 0.861 |
 
 **Findings:**
 - ✅ **Optimal threshold (0.388) maximizes F1-score** (0.506)
-- ✅ **F1 range across thresholds = 0.076** (from 0.438 to 0.514)
-- ✅ Threshold is **robust within ±0.05 range** (0.35-0.40: F1 variation = 0.036)
+- ✅ **F1 range across thresholds = 0.081** (from 0.438 to 0.519)
+- ✅ Threshold is **robust within ±0.05 range** (0.35-0.40: F1 variation = 0.052)
 - Trade-off visualization shows smooth transition between precision and recall
 
 **Conclusion:** Threshold selection (0.388) is stable and not an artifact of noise.

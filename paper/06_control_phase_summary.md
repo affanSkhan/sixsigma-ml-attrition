@@ -16,7 +16,7 @@ The Control phase transitioned the employee attrition prediction project from ex
 
 **Architecture:**
 - **Preprocessing:** Median imputation (numeric) + StandardScaler; Most-frequent imputation (categorical) + One-Hot Encoding
-- **Algorithm:** Logistic Regression with `class_weight='balanced'` (equivalent to 5.19× minority class weight)
+- **Algorithm:** Logistic Regression with `class_weight='balanced'` (5.20× majority-to-minority ratio; sklearn formula: n_samples / (n_classes × n_samples_class))
 - **Decision Threshold:** 0.388 (optimized via precision-recall curve for maximum F1-score)
 - **Training:** 5-fold stratified cross-validation on 1,176 samples; hold-out test set of 294 samples
 
