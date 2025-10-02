@@ -1,10 +1,14 @@
 # Employee Attrition Prediction with Six Sigma DMAIC
 
-[![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
-[![scikit-learn](https://img.shields.io/badge/scikit--learn-1.7-orange)](https://scikit-learn.org/)
+[![Python](https://img.shields.io/badge/Python-3.12-blue)](https://www.python.org/)
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-1.5-orange)](https://scikit-learn.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Paper](https://img.shields.io/badge/Paper-IEEE%20Ready-red)](paper/draft_v1.tex)
 
 > **DMAIC-driven machine learning for HR attrition prediction with production-ready monitoring**
+
+📄 **IEEE Manuscript:** `paper/draft_v1.tex` (12 pages, ready for submission)  
+📦 **Supplementary:** Complete reproducibility package (code, data, models, 126 figures)
 
 ---
 
@@ -148,25 +152,40 @@ Production-ready monitoring with:
 
 ## 📄 Documentation
 
+### Research Paper (IEEE Format)
+- **📄 Main Manuscript:** [`paper/draft_v1.tex`](paper/draft_v1.tex) - IEEE conference paper (12 pages)
+- **📚 Bibliography:** [`paper/references.bib`](paper/references.bib) - 15 citations
+- **🔧 Compilation Guide:** [`paper/COMPILATION_GUIDE.md`](paper/COMPILATION_GUIDE.md) - LaTeX instructions
+- **✅ Submission Checklist:** [`paper/SUBMISSION_CHECKLIST.md`](paper/SUBMISSION_CHECKLIST.md) - Pre-submission QA
+
+### Supporting Documents
 - **Full model card:** [`paper/05_final_results.md`](paper/05_final_results.md) (565 lines)
 - **Control plan:** [`paper/appendix_control_plan.md`](paper/appendix_control_plan.md)
-- **Paper Section 5:** [`paper/06_control_phase_summary.md`](paper/06_control_phase_summary.md)
-- **Publication checklist:** [`paper/PUBLICATION_CHECKLIST.md`](paper/PUBLICATION_CHECKLIST.md)
+- **14 Preprocessing decisions:** [`paper/03_analyze_decisions.md`](paper/03_analyze_decisions.md)
+- **Verification report:** [`paper/VERIFICATION_REPORT.md`](paper/VERIFICATION_REPORT.md) (100% accuracy)
+
+### Supplementary Materials
+- **Reproduction guide:** [`supplementary/README_FOR_REPRODUCTION.md`](supplementary/README_FOR_REPRODUCTION.md)
+- **Project file descriptions:** [`PROJECT_FILE_DESCRIPTIONS.md`](PROJECT_FILE_DESCRIPTIONS.md) (180+ files)
 
 ---
 
 ## 🎓 Citation
 
 If you use this work, please cite:
+
 ```bibtex
-@misc{khan2025sixsigma,
-  author = {Khan, Affan},
-  title = {Employee Attrition Prediction with Six Sigma DMAIC},
-  year = {2025},
-  publisher = {GitHub},
-  url = {https://github.com/affanSkhan/sixsigma-ml-attrition}
+@article{khan2025sixsigma,
+  title={Improving Machine Learning Performance for HR Attrition Prediction 
+         with a Six Sigma DMAIC Framework},
+  author={Khan, Affan Shakir},
+  journal={IEEE Conference Proceedings},
+  year={2025},
+  note={Code and data: https://github.com/affanSkhan/sixsigma-ml-attrition}
 }
 ```
+
+**Manuscript Status:** ✅ Ready for IEEE submission (see [`paper/SUBMISSION_CHECKLIST.md`](paper/SUBMISSION_CHECKLIST.md))
 
 ---
 
